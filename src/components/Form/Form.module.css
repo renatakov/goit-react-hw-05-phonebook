@@ -1,0 +1,35 @@
+.addContact{
+  background-color: blue;
+  color: aliceblue;
+  align-items: center;
+  /* margin-left: 1px; */
+  margin-top: 10px;
+  width: 150px;
+}
+
+.inputDiv{
+  align-items: center;
+  margin-top: 200px;
+  border-radius: 4px;
+  /* margin-left: 550px; */
+  /* padding-left: 10px; */
+}
+/* .inputDiv2{
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 4px;
+  margin-left: 550px;
+  padding-left: 10px;
+} */
+
+.inputBorder{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  height: 350px;
+}

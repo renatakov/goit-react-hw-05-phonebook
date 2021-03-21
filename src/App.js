@@ -16,10 +16,19 @@ class App extends Component {
     filter: "",
   };
 
-  addContact = (obj) => {
-    this.setState((prevState) => {
-      return { contacts: [...prevState.contacts, obj] };
-    });
+  addContact = (contact) => {
+    const contactsExists = this.state.contacts.find(
+      (contactItem) => contactItem.name === contact.name,
+    );
+    if (contactsExists) {
+      // Тут алерт
+      alert(`${contact.name} is already in contacts`);
+    } else {
+      // тут this.setState
+      this.setState({
+        contacts: [...this.state.contacts, contact],
+      });
+    }
   };
 
   deleteContact = (id) => {
